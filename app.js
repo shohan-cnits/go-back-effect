@@ -9,7 +9,6 @@ let calcScrollValue = () => {
      if(pos>100){
         scrollProgress.style.display = "grid";
      }
-
      else{
         scrollProgress.style.display = "none";
      }
@@ -17,7 +16,9 @@ let calcScrollValue = () => {
      document.documentElement.scrollTop = 0;
      });
 
-     scrollProgress.style.background =  ` conic-gra`
+     scrollProgress.style.background =  `conic-gradient(#03cc65 ${ScrollValue}%, #d7d7d7 ${ScrollValue}%)`;
+
+     console.log(shohan);
 };
 
 window.onscroll = calcScrollValue;
